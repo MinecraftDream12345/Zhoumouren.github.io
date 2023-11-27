@@ -112,9 +112,15 @@
     border-radius: 50%;
     height: 100%;
     width: 100%;
+
+    -webkit-transition: -webkit-transform 1.0s ease-out;
+    -moz-transition: -moz-transform 1.0s ease-out;
+    transition: transform 1.0s ease-out;
 }
 #home-card #card-div .avatar:hover img {
-    transform: rotate(360deg);
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
 }
 #home-card #card-div .description {
     margin: 20px auto;
